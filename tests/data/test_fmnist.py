@@ -3,7 +3,9 @@ import os
 import unittest
 
 # Add the src directory to the Python path
-sys.path.insert(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../src")))
+sys.path.insert(
+    0, os.path.abspath(os.path.join(os.path.dirname(__file__), "../../src"))
+)
 
 from data.fmnist import get_data_loaders  # Adjust the import as needed
 
